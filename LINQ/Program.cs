@@ -13,9 +13,6 @@ namespace LINQ
         {
             PriceChangePerDay priceChangePerDay = new PriceChangePerDay();
             priceChangePerDay.ChangePerDay();
-
-         
-
         }
     }
 }

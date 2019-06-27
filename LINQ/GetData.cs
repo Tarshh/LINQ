@@ -8,7 +8,7 @@ namespace LINQ
     {
         public string GetCsvData()
         {
-            return @"C:\Users\tarsh\Documents\dotNetAcademy\LINQ\StockMarket.csv";
+            return @"C:\Users\User\Desktop\DotNetAc\LINQ\StockMarket.csv";
         }
     }
 }

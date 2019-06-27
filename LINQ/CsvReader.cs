@@ -16,7 +16,7 @@ namespace LINQ
 
         public string GetFileLocation()
         {
-            return @"C:\Users\User\Downloads\StockMarket.csv";
+            return @"C:\Users\User\Desktop\DotNetAc\LINQ\StockMarket.csv";
         }
     }
 }
