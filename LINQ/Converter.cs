@@ -18,8 +18,8 @@ namespace LINQ
 
         public string ConvertDifference(string open, string close)
         {
-            var openPrice = Convert.ToDecimal(open);
-            var closePrice = Convert.ToDecimal(close);
+            var openPrice = ConvertToDecimal(open);
+            var closePrice = ConvertToDecimal(close);
             var difference = closePrice - openPrice  ;
             var differencePercentage =  Math.Round(difference / openPrice * 100, 2);
             return $"{differencePercentage} %";
