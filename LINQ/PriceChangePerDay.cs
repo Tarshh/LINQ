@@ -17,6 +17,14 @@ namespace LINQ
 
         public void ChangePerDay()
         {
+            var values = GetEnumerable();
+            CalculateChangePerDay(values);
+
+            Console.ReadKey();
+        }
+
+        public IEnumerable<string> GetEnumerable()
+        {
             var fileLocation = GetData.GetCsvData();
             var reader = new StreamReader(File.OpenRead(fileLocation));
 
@@ -27,8 +35,7 @@ namespace LINQ
             }
 
             var values = _unformattedData.Skip(1);
-
-            CalculateChangePerDay(values);
+            return values;
         }
 
         public void CalculateChangePerDay(IEnumerable<string>values)
@@ -48,8 +55,6 @@ namespace LINQ
             {
                 ConsoleLogger.LogObject(value);
             }
-
-            Console.ReadKey();
         }
     }
 }
